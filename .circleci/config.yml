@@ -1,11 +1,7 @@
-version: 2.1
-
-
+version: 2
 jobs:
-  say-hello:
-  
+  build:
     docker:
-     
       - image: circleci/ruby:2.4.1-node-browsers
 
     
@@ -15,7 +11,6 @@ jobs:
       - run:
           name: Greeting
           command: "echo Hello, World!"
-
       - run:
           name: Print the current time
           command: date
